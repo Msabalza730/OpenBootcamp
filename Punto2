@@ -1,0 +1,35 @@
+import java.util.Scanner;
+
+public class coche{
+
+    private  int puertas;
+
+    Coche(int puertas){
+        setPuertas(puertas);
+    }
+
+    public void setPuertas(int puertas) {
+        this.puertas = puertas;
+    }
+
+    public int getPuertas() {
+        return puertas;
+    }
+
+    public void numeroPuertas(){
+        system.out.print("Puertas: "+getPuertas());
+    }
+}
+
+public class PuertasCoche{
+    static Scanner n = new Scanner(System.in);
+
+    public static void main(String[] args){
+        int puertas;
+        System.out.println("Ingrese el numero de puertas: ");
+        puertas = n.nextIn();
+        carro = new coche(puertas);
+        carro.numeroPuertas();
+    }
+}
+
